@@ -1,0 +1,17 @@
+-   id: poetry-check
+    name: poetry check
+    entry: poetry check
+    pass_filenames: false
+    language: python
+    require_serial: false
+    additional_dependencies: []
+    files: pyproject.toml
+
+-   id: poetry-lock
+    name: poetry lock
+    entry: poetry lock --no-update
+    pass_filenames: false
+    language: python
+    require_serial: false
+    additional_dependencies: []
+    files: pyproject.toml
