@@ -5,13 +5,13 @@
     language: python
     require_serial: false
     additional_dependencies: []
-    files: pyproject.toml
+    files: pyproject\.toml
 
 -   id: poetry-lock
     name: poetry lock
-    entry: poetry lock --no-update
+    entry: python -m poetry_lock_check check-lock
     pass_filenames: false
     language: python
     require_serial: false
     additional_dependencies: []
-    files: pyproject.toml
+    files: pyproject\.toml|poetry\.lock
